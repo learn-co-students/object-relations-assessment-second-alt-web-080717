@@ -27,7 +27,14 @@ Implement all of the methods described below:
 + DriveIn#full_house?
   + returns true if all movie screens are at capacity
 + DriveIn#whats_playing
-  + returns the names of all movies currently playing
+  + returns a hash containing the information for what is playing at each screen. The format of the hash should be like this:
+  
+  ```
+  {
+    "Spider Man" => {:available_seats => 12},
+    "Cinderalla" => {:available_seats => 0}
+  }
+  ```
 
 ### MovieScreen
 #MovieScreen.new is provided for you in this lab, and takes in a movie title as a String and a capacity as an Integer
